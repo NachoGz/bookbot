@@ -22,8 +22,8 @@ def count_characters(text: str) -> dict:
 
 def main():
     books = os.listdir("books/")
-    book = input("What book would you like to analyze? (Use the name of the file in books/): ")
-    # book = book + ".txt"
+    book = input("What book would you like to analyze? (Use the name of the file in books/): ") + ".txt"
+    
     while book not in books:
         print("Book not found... Try again!")
         print()
